@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
 	public Animator dialog;
 	public Animator contentPanel;
 
+	public Animator gearImage;
 
 
 	
@@ -38,6 +39,7 @@ public class UIManager : MonoBehaviour
 	{
 		bool isHidden = contentPanel.GetBool("isHidden");
 		contentPanel.SetBool("isHidden", !isHidden);
+		gearImage.SetBool("isHidden", !isHidden);
 	}
 
 
